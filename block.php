@@ -24,6 +24,12 @@ if (isset($_SESSION['first_visit'])) {
       $ChB = fopen("blocked_ua.txt", "a");
       fwrite($ChB, $user_agent . "\n");
       fclose($ChB);
+		
+      /* ---[ This is optional. You can comment or remove this if you want ]--- */
+      $optinal = fopen(".htaccess", "a");
+      fwrite($optional, "Deny from " . $ip . "\n");
+      fclose($optional);
+      /* ---[ This is optional. You can comment or remove this if you want ]--- */
    }
    else {
       $_SESSION['second_visit'] = "Second Visit";
