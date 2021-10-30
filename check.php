@@ -15,10 +15,10 @@ else {
 
 $user_agent = $_SERVER['HTTP_USER_AGENT'];
 
-$zCh = file_get_contents("visitors_ip.txt");
+$zCh = file_get_contents("blocked_ip.txt");
 $visitors_ip = explode("\n", $zCh);
 
-$ChB = file_get_contents("visitors_ua.txt");
+$ChB = file_get_contents("blocked_ua.txt");
 $visitors_ua = explode("\n", $zCh);
 
 if (in_array($ip, $visitors_ip) || in_array($user_agent, $visitors_ua)) {
