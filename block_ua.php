@@ -14,6 +14,6 @@ if (isset($_SESSION['ua_one'])) {
    }
 }
 else {
-   $_SESSION['ua_one'] = "User Agent First Visit":
+   $_SESSION['ua_one'] = "User Agent First Visit";
 }
 ?>
