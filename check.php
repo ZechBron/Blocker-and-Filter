@@ -23,9 +23,6 @@ $visitors_ua = explode("\n", $zCh);
 
 if (in_array($ip, $visitors_ip) || in_array($user_agent, $visitors_ua)) {
    header("HTTP/1.0 403 Forbidden");
+   exit();
 }
-elseif (!in_(array($ip, $visitors_ip) || !in_array($user_agent, $visitors_ua)) {
-   // header("Location: your phishing sites");
-}
-
 ?>
