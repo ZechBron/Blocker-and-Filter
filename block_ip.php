@@ -26,6 +26,6 @@ if (isset($_SESSION['ip_one'])) {
    }
 }
 else {
-   $_SESSION['ip_one'] = "IP First Visit":
+   $_SESSION['ip_one'] = "IP First Visit";
 }
 ?>
