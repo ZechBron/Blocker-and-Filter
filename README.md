@@ -1,6 +1,6 @@
 # PHP Blocker, Filter and Anti Bots. 
 
-1. .htaccess at your own risks. Sometimes it works, but sometimes it cause internal server error
+1. Use .htaccess at your own risks. Sometimes it works, but sometimes it cause internal server error
 
 ---
 
