@@ -19,7 +19,7 @@ $zCh = file_get_contents("blocked_ip.txt");
 $visitors_ip = explode("\n", $zCh);
 
 $ChB = file_get_contents("blocked_ua.txt");
-$visitors_ua = explode("\n", $zCh);
+$visitors_ua = explode("\n", $ChB);
 
 if (in_array($ip, $visitors_ip) || in_array($user_agent, $visitors_ua)) {
    header("HTTP/1.0 403 Forbidden");
