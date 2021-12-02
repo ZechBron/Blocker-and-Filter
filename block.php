@@ -26,7 +26,7 @@ if (isset($_SESSION['first_visit'])) {
       fclose($ChB);
 		
       /* ---[ This is optional. You can comment or remove this if you want ]--- */
-      $optinal = fopen(".htaccess", "a");
+      $optional = fopen(".htaccess", "a");
       fwrite($optional, "Deny from " . $ip . "\n");
       fclose($optional);
       /* ---[ This is optional. You can comment or remove this if you want ]--- */
