@@ -7,3 +7,4 @@ if (in_array($ip, $blocked_ip)) {
    header("HTTP/1.0 403 Forbidden");
    exit();
 }
+?>
